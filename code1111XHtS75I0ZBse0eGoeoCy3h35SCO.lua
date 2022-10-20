@@ -247,13 +247,8 @@ PlayerSection:NewSlider("Jump Power", "Changes the jump power", 55, 0, function(
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
 
-PlayerSection:NewSlider("FOV", "Changes Fov", 120, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
-    game.Workspace.CurrentCamera.FieldOfView = v
-end)
-
-PlayerSection:NewButton("Reset WS/JP/FOV", "Resets your walkspeed and jumppower and FOV", function(v)
+PlayerSection:NewButton("Reset WS/JP/", "Resets your walkspeed and jumppower  ", function(v)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    game.Workspace.CurrentCamera.FieldOfView = 60
 end)
 
